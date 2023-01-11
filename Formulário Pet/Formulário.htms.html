@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="Style.css" media="screen">
+        <title>Cadastro Pet</title>
+
+    </head>
+
+    <body>  
+
+        <div class="titulo">
+            <h1 id="titulo">Cadastro Pet</h1>
+            <p id="subtitulo">Complete o cadastro, e entraremos em contato</p>
+            <br>
+        </div>
+  
+        <form>
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome do Tutor</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Nome do Pet</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                
+            </fieldset> 
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual o motivo da busca por registro do seu Pet?</strong></label>
+                <label>
+                    <input type="radio" name="CadastroPet" value="Viagem ao Exterior" checked>Viagem ao Exterior
+                </label>
+                <label>
+                    <input type="radio" name="CadastroPet" value="Viagem nacional"">Viagem nacional
+                </label>
+                <label>
+                    <input type="radio" name="CadastroPet" value="Controle de Informações">Controle de Informações
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Qual a fase de vida que o seu Pet se encontra?</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Filhote</option>
+                  <option>Adulto</option>
+                  <option>Idoso</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+
+                <div id="check">
+                    <label><strong>Qual o atual registro de informações do Pet:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Microchip">
+                    <label for="tecnologia1"> Microchip</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Caderneta de Vacina">
+                    <label for="tecnologia5"> Caderneta de Vacina</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Outro">
+                    <label for="tecnologia4"> Outro</label>
+
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre o seu Pet: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+ 
+    </body>
+
+</html>
